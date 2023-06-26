@@ -21,3 +21,29 @@ h6 {
 body {
     font-family: 'Roboto Condensed', sans-serif;
 }
+
+.expbtn {
+    background-image: url('../assets/images/btn.svg');
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+.expbtn:hover {
+    animation: expbtn 1s linear forwards;
+}
+
+@keyframes expbtn {
+    0% {
+        background-image: url('../assets/images/btn.svg');
+        background-position: center;
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+    100% {
+        background-image: url('../assets/images/btnhover.svg');
+        background-position: center;
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+}
