@@ -8,14 +8,12 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://use.typekit.net/xhs8bxc.css">
     <script src="script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <link rel="prefetch" href="index.html">
     <title>Warping Microinteractions</title>
 </head>
 <body class="antialiased bg-gradient-to-b to-indigo-950 from-black">
-    <nav>
-        <div class="TopNav fixed top-0 left-0 w-full z-40">
+    <nav class="fixed top-0 left-0 w-screen z-50 -space-y-14">
+        <div class="TopNav">
             <div class="bg-transparent">
             <div class="h-16 flex justify-end items-center container mx-auto">
                 <ul class="text-white text-sm">
@@ -35,82 +33,54 @@
             </div>
         </div>
         </div>
-        <div class="mx-auto fixed top-0 left-0 w-screen z-[100] clickthrough">
+        <div class="mx-auto clickthrough">
             <div class="container flex justify-start mx-auto py-2"><a
             href="index.html"
-            class="flex flex-col content-start"
-            id="logo">
+            class="flex flex-col content-start svghover">
                 <svg 
                 width="160" 
                 height="5" 
                 viewBox="0 0 160 5" 
-                class="svghover" 
                 xmlns="http://www.w3.org/2000/svg">
-                    <style type="text/css">
-                    .st0{fill:#ffffff;}
-                    </style>
-                    <path class="st0" d="M47.9535 5V0.371948H33.6202V5H38.3005V4.87652H43.3317V5H47.9535ZM68.3533 5V0.371948H54.0785V5H58.7003V4.87652H63.7316V5H68.3533ZM94.5299 5V0.371948H77.0959V5H81.7176V4.87652H89.9081V5H94.5299ZM128.444 5H123.822V0.371948H138.389V5H133.768V4.99352H128.444V5ZM148.848 5H144.226V0.371948H159.963V4.87652H148.848V5ZM24.9389 5H20.3171V0.371948H24.9389V5ZM15.2273 5V0.371948H10.6056V5H15.2273ZM5.28179 5H0.660034V0.371948H5.28179V5Z"/>
+                    <path d="M47.9535 5V0.371948H33.6202V5H38.3005V4.87652H43.3317V5H47.9535ZM68.3533 5V0.371948H54.0785V5H58.7003V4.87652H63.7316V5H68.3533ZM94.5299 5V0.371948H77.0959V5H81.7176V4.87652H89.9081V5H94.5299ZM128.444 5H123.822V0.371948H138.389V5H133.768V4.99352H128.444V5ZM148.848 5H144.226V0.371948H159.963V4.87652H148.848V5ZM24.9389 5H20.3171V0.371948H24.9389V5ZM15.2273 5V0.371948H10.6056V5H15.2273ZM5.28179 5H0.660034V0.371948H5.28179V5Z"/>
                 </svg>
                 <svg 
                 width="149" 
                 height="4" 
                 viewBox="0 0 149 4" 
-                class="svghover" 
                 xmlns="http://www.w3.org/2000/svg" 
                 id="scroll1"
                 class="scroller"
                 preserveAspectRatio="none">
-                    <style type="text/css">
-                    .st0{fill:#ffffff;}
-                    </style>
-                    <path class="st0" d="M0.660034 4V0H5.28179V4H0.660034ZM128.444 4H123.822V0H128.444V4ZM138.389 4H133.768V0H138.389V4ZM148.848 4H144.226V0H148.848V4ZM94.5299 0V4H89.9081V0H94.5299ZM77.0959 0V4H81.7176V0H77.0959ZM68.3533 0V4H63.7316V0H68.3533ZM54.0785 0V4H58.7003V0H54.0785ZM47.9535 0V4H43.3317V0H47.9535ZM33.6202 0V4H38.3005V0H33.6202ZM24.9389 0V4H20.3171V0H24.9389ZM10.6056 0H15.2273V4H10.6056V0Z"/>
+                    <path d="M0.660034 4V0H5.28179V4H0.660034ZM128.444 4H123.822V0H128.444V4ZM138.389 4H133.768V0H138.389V4ZM148.848 4H144.226V0H148.848V4ZM94.5299 0V4H89.9081V0H94.5299ZM77.0959 0V4H81.7176V0H77.0959ZM68.3533 0V4H63.7316V0H68.3533ZM54.0785 0V4H58.7003V0H54.0785ZM47.9535 0V4H43.3317V0H47.9535ZM33.6202 0V4H38.3005V0H33.6202ZM24.9389 0V4H20.3171V0H24.9389ZM10.6056 0H15.2273V4H10.6056V0Z"/>
                 </svg>
                 <svg 
                 width="162" 
                 height="24" 
                 viewBox="0 0 162 24" 
-                class="svghover" 
                 xmlns="http://www.w3.org/2000/svg">
-                    <style type="text/css">
-                    .st0{fill:#ffffff;}
-                    </style>
-                    <path class="st0" d="M144.226 0H148.848V4.76866H161.075V9.27323H148.848V18.8089H161.66V23.3719H144.226V0ZM77.0959 0V23.3719H81.7176V9.27323H94.5299V0H89.9081V4.76866H81.7176V0H77.0959ZM54.0785 0V23.3719H58.7003V9.27323H66.8907V23.3719H71.5125V4.76866H68.3533V0H63.7316V4.76866H58.7003V0H54.0785ZM33.6202 0V4.76866H30.5195V23.3719H35.1413V9.27323H43.3317V23.3719H47.9535V0H43.3317V4.76866H38.3005V0H33.6202ZM24.9389 0V14.4213H15.2273V23.3719H0.660034V0H5.28179V18.6919H10.6056V0H15.2273V9.91674H20.3171V0H24.9389ZM123.822 0H128.444V23.3719H123.822V4.76866H118.732V23.3719H114.111V0.322587H123.822V0ZM133.768 0H138.389V23.3719H133.768V0Z"/>
+                    <path d="M144.226 0H148.848V4.76866H161.075V9.27323H148.848V18.8089H161.66V23.3719H144.226V0ZM77.0959 0V23.3719H81.7176V9.27323H94.5299V0H89.9081V4.76866H81.7176V0H77.0959ZM54.0785 0V23.3719H58.7003V9.27323H66.8907V23.3719H71.5125V4.76866H68.3533V0H63.7316V4.76866H58.7003V0H54.0785ZM33.6202 0V4.76866H30.5195V23.3719H35.1413V9.27323H43.3317V23.3719H47.9535V0H43.3317V4.76866H38.3005V0H33.6202ZM24.9389 0V14.4213H15.2273V23.3719H0.660034V0H5.28179V18.6919H10.6056V0H15.2273V9.91674H20.3171V0H24.9389ZM123.822 0H128.444V23.3719H123.822V4.76866H118.732V23.3719H114.111V0.322587H123.822V0ZM133.768 0H138.389V23.3719H133.768V0Z"/>
                 </svg>
-            </div></a>
+            </a></div>
         </div>
     </nav>
+    <!-- THIS IS THE SVG BACKGROUND -->
+    <div class="w-screen h-screen bg-indigo-950 fixed top-o left-0 -z-10 clickthrough" id="svgbackground1">
+        <svg 
+        width="100%" 
+        height="100%" 
+        viewBox="0 0 1200 1200" 
+        fill="none" 
+        preserveAspectRatio="none">
+            <rect x="861.239" y="72.155" width="88" height="1162.42" rx="32" transform="rotate(43.2344 861.239 72.155)" fill="#660F85"/>
+            <rect x="966.238" y="40" width="88" height="1162.42" rx="32" transform="rotate(43.2344 966.238 40)" fill="#1B0549"/>
+            <rect x="886.239" y="234" width="88" height="1162.42" rx="32" transform="rotate(43.2344 886.239 234)" fill="#002688"/>
+            <rect x="1102.24" y="100" width="88" height="1162.42" rx="32" transform="rotate(43.2344 1102.24 100)" fill="#E9ADAD"/>
+        </svg>
+    </div>
     <main>
-        <!-- THIS IS THE SVG BACKGROUND -->
-        <!-- <div class="w-screen h-screen bg-indigo-500 fixed top-o left-0">
-            <svg 
-            width="100%" 
-            height="100%" 
-            viewBox="0 0 1200 1200" 
-            fill="none" 
-            preserveAspectRatio="none">
-            <g clip-path="url(#clip0_167_678)">
-                <rect width="1200" height="1200" fill="url(#paint0_linear_167_678)"/>
-                <g style="mix-blend-mode:overlay" opacity="0.5">
-                <rect width="1200" height="1200" fill="url(#paint1_radial_167_678)"/>
-                </g>
-                </g>
-                <defs>
-                <linearGradient id="paint0_linear_167_678" x1="600" y1="0" x2="600" y2="1200" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#1B0067"/>
-                <stop offset="1" stop-color="#492D69"/>
-                </linearGradient>
-                <radialGradient id="paint1_radial_167_678" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 336) rotate(90) scale(864 600)">
-                <stop stop-color="#FF0000"/>
-                <stop offset="1" stop-color="#FFC470"/>
-                </radialGradient>
-                <clipPath id="clip0_167_678">
-                <rect width="1200" height="1200" fill="white"/>
-                </clipPath>
-                </defs>
-            </svg>
-        </div> -->
         <!-- THIS IS ALL OF THE CONTENT -->
-        <div class="container mx-auto pt-24">
+        <div class="container mx-auto pt-24 clickthrough">
             <div class="w-full flex justify-start text-white py-12 -mb-24">
                 <img class="w-full" src="http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001172/GSFC_20171208_Archive_e001172~orig.jpg" />
             </div>
@@ -138,7 +108,7 @@
             </div>
         </div>
     </main>
-    <footer class="mt-12 z-20">
+    <footer class="mt-12">
         <div class="py-2 h-12">
             <div class="container flex justify-between items-center mx-auto opacity-50">
                 <div class="text-white text-xl hover:text-pink-600"><a
@@ -168,27 +138,4 @@
 </body>
 </html>
 <script>
-// gsap.registerPlugin(ScrollTrigger);
-
-// window.addEventListener("scroll", function (event) {
-//     var scroll_y = this.scrollY;
-// });
-
-// var max = ScrollTrigger.maxScroll(window)
-
-// const tl = gsap.timeline({
-//   scrollTrigger: {
-//     trigger: "#scroll1",
-//     scrub: true,
-//     pin: true,
-    
-//     start: "0",
-//     end: max
-//   }
-// })
-
-// .to(".scroller", {
-//   scaleY: max, 
-//   ease: "none"
-// })
 </script>

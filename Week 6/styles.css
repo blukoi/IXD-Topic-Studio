@@ -47,3 +47,19 @@ body {
         background-repeat: no-repeat;
     }
 }
+
+.svghover {
+    display: inline-block;
+}
+
+.svghover:hover path{
+    fill: indianred;
+}
+
+#scroll1 {
+    height: 4px;
+}
+
+.clickthrough {
+    pointer-events: none;
+}
