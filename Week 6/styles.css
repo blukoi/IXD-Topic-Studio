@@ -60,6 +60,19 @@ body {
     height: 4px;
 }
 
+#scroll2, #scroll4, #scroll5, #scroll6, #scroll7 {
+    height: 32px;
+}
+
+#scroll3 {
+    height: 44px;
+}
+
 .clickthrough {
     pointer-events: none;
+}
+
+.stretched-text {
+  transform-origin: center;
+  transition: transform 0.15s;
 }

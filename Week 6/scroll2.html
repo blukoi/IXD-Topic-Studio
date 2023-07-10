@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/xhs8bxc.css">
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="prefetch" href="index.html">
+    <title>Warping Microinteractions</title>
+</head>
+<body class="antialiased bg-gradient-to-b to-indigo-950 from-black">
+    <nav>
+        <div class="TopNav fixed top-0 left-0 w-full z-40">
+            <div class="bg-transparent">
+            <div class="h-16 flex justify-end items-center container mx-auto">
+                <ul class="text-white text-sm">
+                    <li class="inline-block mr-4"><a href="/">
+                        <p class="rounded-lg border border-white hover:border-pink-600 px-4 py-2 hover:text-pink-600">Times</p>
+                    </a></li>
+                    <li class="inline-block mr-4"><a href="/">
+                        <p class="rounded-lg border border-white hover:border-pink-600 px-4 py-2 hover:text-pink-600">Spaces</p>
+                    </a></li>
+                    <li class="inline-block mr-4"><a href="scroll1.html">
+                        <p class="rounded-lg border border-white hover:border-pink-600 px-4 py-2 hover:text-pink-600">Perception</p>
+                    </a></li>
+                    <li class="inline-block"><a href="/">
+                        <p class="rounded-lg border border-white hover:border-pink-600 px-4 py-2 hover:text-pink-600">Self</p>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <div class="mx-auto fixed top-0 left-0 w-screen z-[100] clickthrough">
+            <div class="container flex justify-start mx-auto py-2"><a
+            href="index.html"
+            class="flex flex-col content-start"
+            id="logo">
+                <svg 
+                width="160" 
+                height="5" 
+                viewBox="0 0 160 5" 
+                class="svghover" 
+                xmlns="http://www.w3.org/2000/svg">
+                    <style type="text/css">
+                    .st0{fill:#ffffff;}
+                    </style>
+                    <path class="st0" d="M47.9535 5V0.371948H33.6202V5H38.3005V4.87652H43.3317V5H47.9535ZM68.3533 5V0.371948H54.0785V5H58.7003V4.87652H63.7316V5H68.3533ZM94.5299 5V0.371948H77.0959V5H81.7176V4.87652H89.9081V5H94.5299ZM128.444 5H123.822V0.371948H138.389V5H133.768V4.99352H128.444V5ZM148.848 5H144.226V0.371948H159.963V4.87652H148.848V5ZM24.9389 5H20.3171V0.371948H24.9389V5ZM15.2273 5V0.371948H10.6056V5H15.2273ZM5.28179 5H0.660034V0.371948H5.28179V5Z"/>
+                </svg>
+                <svg 
+                width="149" 
+                height="4" 
+                viewBox="0 0 149 4" 
+                class="svghover" 
+                xmlns="http://www.w3.org/2000/svg" 
+                id="scroll1"
+                class="scroller"
+                preserveAspectRatio="none">
+                    <style type="text/css">
+                    .st0{fill:#ffffff;}
+                    </style>
+                    <path class="st0" d="M0.660034 4V0H5.28179V4H0.660034ZM128.444 4H123.822V0H128.444V4ZM138.389 4H133.768V0H138.389V4ZM148.848 4H144.226V0H148.848V4ZM94.5299 0V4H89.9081V0H94.5299ZM77.0959 0V4H81.7176V0H77.0959ZM68.3533 0V4H63.7316V0H68.3533ZM54.0785 0V4H58.7003V0H54.0785ZM47.9535 0V4H43.3317V0H47.9535ZM33.6202 0V4H38.3005V0H33.6202ZM24.9389 0V4H20.3171V0H24.9389ZM10.6056 0H15.2273V4H10.6056V0Z"/>
+                </svg>
+                <svg 
+                width="162" 
+                height="24" 
+                viewBox="0 0 162 24" 
+                class="svghover" 
+                xmlns="http://www.w3.org/2000/svg">
+                    <style type="text/css">
+                    .st0{fill:#ffffff;}
+                    </style>
+                    <path class="st0" d="M144.226 0H148.848V4.76866H161.075V9.27323H148.848V18.8089H161.66V23.3719H144.226V0ZM77.0959 0V23.3719H81.7176V9.27323H94.5299V0H89.9081V4.76866H81.7176V0H77.0959ZM54.0785 0V23.3719H58.7003V9.27323H66.8907V23.3719H71.5125V4.76866H68.3533V0H63.7316V4.76866H58.7003V0H54.0785ZM33.6202 0V4.76866H30.5195V23.3719H35.1413V9.27323H43.3317V23.3719H47.9535V0H43.3317V4.76866H38.3005V0H33.6202ZM24.9389 0V14.4213H15.2273V23.3719H0.660034V0H5.28179V18.6919H10.6056V0H15.2273V9.91674H20.3171V0H24.9389ZM123.822 0H128.444V23.3719H123.822V4.76866H118.732V23.3719H114.111V0.322587H123.822V0ZM133.768 0H138.389V23.3719H133.768V0Z"/>
+                </svg>
+            </div></a>
+        </div>
+    </nav>
+    <main>
+        <!-- THIS IS THE SVG BACKGROUND -->
+        <!-- <div class="w-screen h-screen bg-indigo-500 fixed top-o left-0">
+            <svg 
+            width="100%" 
+            height="100%" 
+            viewBox="0 0 1200 1200" 
+            fill="none" 
+            preserveAspectRatio="none">
+            <g clip-path="url(#clip0_167_678)">
+                <rect width="1200" height="1200" fill="url(#paint0_linear_167_678)"/>
+                <g style="mix-blend-mode:overlay" opacity="0.5">
+                <rect width="1200" height="1200" fill="url(#paint1_radial_167_678)"/>
+                </g>
+                </g>
+                <defs>
+                <linearGradient id="paint0_linear_167_678" x1="600" y1="0" x2="600" y2="1200" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#1B0067"/>
+                <stop offset="1" stop-color="#492D69"/>
+                </linearGradient>
+                <radialGradient id="paint1_radial_167_678" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 336) rotate(90) scale(864 600)">
+                <stop stop-color="#FF0000"/>
+                <stop offset="1" stop-color="#FFC470"/>
+                </radialGradient>
+                <clipPath id="clip0_167_678">
+                <rect width="1200" height="1200" fill="white"/>
+                </clipPath>
+                </defs>
+            </svg>
+        </div> -->
+        <!-- THIS IS ALL OF THE CONTENT -->
+        <div class="container mx-auto pt-24">
+            <div class="w-full flex justify-start text-white py-12 -mb-24">
+                <img class="w-full" src="http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001172/GSFC_20171208_Archive_e001172~orig.jpg" />
+            </div>
+            <div class="w-full flex justify-end text-white pb-12">
+                <p class="w-full sm:w-9/12 md:w-6/12 lg:w-4/12">In the vast expanse of space, time becomes an enigmatic concept. It stretches and warps, weaving a complex tapestry that governs the celestial dance of planets, stars, and galaxies. From the birth of the universe to the present day, time has been the silent witness to cosmic events unfolding.</p>
+            </div>
+            <div class="w-full flex justify-end text-white pb-12 -ml-24">
+                <img class="w-full sm:w-9/12 md:w-6/12 lg:w-4/12" src="http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e002074/GSFC_20171208_Archive_e002074~orig.jpg" />
+            </div>
+            <div class="w-full flex justify-end text-white pb-32 -mt-24">
+                <p class="w-full sm:w-9/12 md:w-6/12 lg:w-4/12">As we gaze upon the night sky, we are captivated by the shimmering stars that reveal their ancient light, reminding us of the immense distances traveled through time. Galaxies collide and merge, creating celestial spectacles that defy our understanding of time's steady march.</p>
+            </div>
+            <div class="w-full flex justify-around text-white pb-32 -mt-24 text-center">
+                <h1 class="w-full sm:w-9/12 md:w-6/12 lg:w-4/12 text-2xl font-black stretched-text">This is a Title</h1>
+            </div>
+            <div class="w-full h-fit flex justify-between text-white pb-12 content-end space-x-12">
+                <img class="w-full sm:w-9/12 md:w-6/12" src="http://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000382/GSFC_20171208_Archive_e000382~orig.jpg" />
+                <p class="w-full sm:w-9/12 md:w-6/12 lg:w-4/12">Space itself is a canvas for the passage of time. It is a realm where gravity bends the fabric of spacetime, creating cosmic warps and wormholes that offer tantalizing glimpses into the unknown. Black holes, the cosmic behemoths, possess an intense gravitational pull that distorts time, trapping it within their event horizons.</p>
+            </div>
+            <div class="w-full flex justify-end text-white pb-12 -mt-24">
+                <img class="w-full md:w-9/12" src="http://images-assets.nasa.gov/image/PIA22567/PIA22567~orig.jpg" />
+            </div>
+            <blockquote class="w-full flex justify-around text-white pb-32 -mt-24">
+                <h1 class="w-full sm:w-10/12 md:w-9/12 lg:w-6/12 font-black italic text-lg">In the grand tapestry of the universe, time is both a guiding force and a mysterious enigma. It allows us to measure the rhythms of celestial bodies, to witness the birth and death of stars, and to ponder the existence of parallel universes and the nature of time travel.</h1>
+            </blockquote>
+            <div class="w-full flex justify-end text-white pb-32 mt-24">
+                <p class="w-full sm:w-9/12 md:w-6/12 lg:w-4/12">Exploring the mysteries of space and time is an endeavor that pushes the boundaries of human knowledge and ignites our curiosity. From the groundbreaking theories of relativity to the cosmic microwave background radiation, every discovery unravels new layers of the cosmic narrative, bringing us closer to understanding our place in the vastness of the cosmos.</p>
+            </div>
+        </div>
+    </main>
+    <footer class="mt-12 z-20">
+        <div class="py-2 h-12">
+            <div class="container flex justify-between items-center mx-auto opacity-50">
+                <div class="text-white text-xl hover:text-pink-600"><a
+                    href="/"
+                    class="flex items-center">
+                    <svg 
+                    width="79" 
+                    height="16" 
+                    viewBox="0 0 161 33" 
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.62176 0.371948V27.6919H9.94555V0.371948H14.5673V18.9167H19.6571V0.371948H24.2788V23.4213H14.5673V32.3719H0V0.371948H4.62176Z" fill="white"/>
+                        <path d="M42.6717 32.3719V18.2732H34.4813V32.3719H29.8595V13.7687H32.9602V0.371948H47.2935V32.3719H42.6717ZM42.6717 4.87652H37.6404V13.7687H42.6717V4.87652Z" fill="white"/>
+                        <path d="M66.2307 32.3719V18.2732H58.0402V32.3719H53.4185V0.371948H67.6933V13.7687H70.8525V32.3719H66.2307ZM63.0715 4.87652H58.0402V13.7687H63.0715V4.87652Z" fill="white"/>
+                        <path d="M81.0576 18.2732V32.3719H76.4359V0.371948H93.8698V18.2732H81.0576ZM89.2481 4.87652H81.0576V13.7687H89.2481V4.87652Z" fill="white"/>
+                        <path d="M133.108 32.3719V4.99352H127.784V32.3719H123.162V13.7687H118.072V32.3719H113.451V9.32259H123.162V0.371948H137.729V32.3719H133.108Z" fill="white"/>
+                        <path d="M143.566 32.3719V0.371948H159.303V4.87652H148.188V13.7687H160.415V18.2732H148.188V27.8089H161V32.3719H143.566Z" fill="white"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="text-white text-right text-xs">
+                    Copyright © 2023 Warp, ltd.
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+<script>
+window.addEventListener('scroll', function() {
+    var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+    var windowHeight = window.innerHeight;
+
+    var elements = document.getElementsByClassName('stretched-text');
+    for (var i = 0; i < elements.length; i++) {
+    var element = elements[i];
+    var elementOffsetTop = element.offsetTop;
+    var visibility = 10 * ( (elementOffsetTop - scrollPosition) / windowHeight );
+
+    element.style.transform = 'scaleY(' + visibility + ')';
+    }
+});
+</script>
