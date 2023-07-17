@@ -76,3 +76,13 @@ body {
   transform-origin: center;
   transition: transform 0.15s;
 }
+
+#widesvg {
+    width: 100%;
+    height: auto;
+}
+
+#widesvg2 {
+    width: 100%;
+    height: auto;
+}
