@@ -161,14 +161,14 @@
 window.addEventListener('scroll', distortsvg);
 
 function distortsvg() {
-    const middleSvg = document.getElementById('widesvg2');
+    const middleSvg = document.getElementById('widesvg');
     const viewportHeight = window.innerHeight;
     const maxScrollableDistance = document.documentElement.scrollHeight - viewportHeight;
     const scrollPosition = window.pageYOffset;
     const scrollPercentage = (scrollPosition / maxScrollableDistance) * 100;
-    let svgHeight = viewportHeight - (scrollPercentage / 70) * viewportHeight;
+    let svgHeight = viewportHeight - (scrollPercentage / 20) * viewportHeight;
   
-    svgHeight = Math.max(svgHeight, 197);
+    svgHeight = Math.max(svgHeight, 41);
   
     middleSvg.style.height = `${svgHeight}px`;
 }

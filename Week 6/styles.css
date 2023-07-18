@@ -48,6 +48,10 @@ body {
     }
 }
 
+.cls-1 {
+    fill: #fff;
+}
+
 .svghover {
     display: inline-block;
 }
