@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/xhs8bxc.css">
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
+    <link rel="prefetch" href="index.html">
+    <title>Warping Microinteractions</title>
+</head>
+<body class="antialiased">
+    <nav>
+        <div class="fixed top-0 left-0 w-screen z-[100] clickthrough">
+        </div>
+    </nav>
+    <div class="fixed top-0 left-0 w-screen h-screen bg-gradient-to-b from-violet-500 to-fuchsia-500 -z-10"></div>
+    <main class="bg-transparent z-50">
+        <div class="clickthrough w-screen h-screen flex flex-col justify-center content-center bg-transparent">
+            <div class="w-screen flex justify-center">
+                <p class="text-white text-center text-xs lowercase tracking-widest font-thin">Excerpts from a note — 2013</p>
+            </div>
+            <div class="w-screen flex justify-center">
+                <div id="mouseScroll"></div>
+            </div>
+        </div>
+        <div class="w-screen mx-auto py-48 z-30 h-fit bg-gradient-to-b from-purple-950/0 to-purple-950">
+            <div class="w-full container mx-auto mt-24 flex flex-col justify-center">
+                <div class="w-full flex justify-center">
+                    <svg
+                    width="133"
+                    height="96"
+                    viewBox="0 0 133 96"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none"
+                    id="noteA1">
+                        <path d="M76.1631 54.2083V87.1626C76.1631 92.5297 77.7744 94.3546 82.9307 94.3546V94.8913H58.6531V94.3546C63.8094 94.3546 65.4207 92.5297 65.4207 87.1626V55.389C65.4207 35.8526 56.612 35.6379 43.5064 42.5079V57.5359C43.5064 67.5188 32.8715 79.5412 27.3929 86.0891C11.3869 105.196 5.15631 93.6032 5.15631 77.1797V37.4627H0V36.926H5.15631V24.6889L15.8986 20.0732V36.926H23.5257V37.4627H15.8986V82.7615C15.8986 91.671 14.1799 100.044 24.7073 87.914C32.5492 78.7898 32.7641 74.9255 32.7641 69.0216V11.0563C32.6567 5.58184 32.6567 5.04513 25.9964 7.7287V7.19199L43.5064 0V41.5418C60.4793 34.1351 76.1631 33.8131 76.1631 54.2083Z" fill="white"/>
+                        <path d="M133 66.1233H90.5678C95.187 101.654 126.662 99.8291 132.033 78.2531H132.57C130.207 89.7388 119.465 95.9647 108.4 95.9647C92.9311 95.9647 80.1478 82.7615 80.1478 66.4454C80.1478 52.4908 88.9565 41.0051 100.558 37.8921C119.465 32.847 133 48.5191 133 66.1233ZM101.847 38.1068C92.1792 40.683 88.9565 53.0275 90.4604 65.5866H121.935C123.224 46.6942 114.416 34.7792 101.847 38.1068Z" fill="white"/>
+                    </svg>
+                </div>
+                <div class="spacerDiv w-full bg-transparent"></div>
+                <div class="w-full flex justify-center">
+                    <svg
+                    width="464"
+                    height="107"
+                    viewBox="0 0 464 107"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none"
+                    id="noteA2">
+                        <path d="M94.8304 1.95881V1.22426H128.716V1.83638C119.94 2.20366 114.577 12.4874 109.579 27.4233L82.6414 107H81.7882L64.236 61.9474L48.9998 107H48.1466L10.3607 9.91647C8.5323 5.50915 4.99749 1.83638 0 1.83638V1.22426H28.5223V1.83638C22.3059 1.83638 21.4526 4.65217 23.5248 9.91647L54.3629 89.3707L63.9923 61.0904L44.0023 9.91647C42.1739 5.50915 38.6391 1.83638 33.6416 1.83638V1.22426H62.1639V1.83638C55.9475 1.83638 55.0943 4.65217 57.1664 9.91647L88.0046 89.3707L106.288 35.381C111.286 20.8124 116.771 1.95881 94.8304 1.95881Z" fill="white"/>
+                        <path d="M177.471 104.429C126.277 118.263 98.3643 16.5275 150.168 2.57093C201.605 -11.2632 229.274 90.595 177.471 104.429ZM163.819 107C192.463 107 215.866 83.6167 215.866 53.5C215.866 23.5057 192.463 0 163.819 0C135.053 0 111.772 23.5057 111.772 53.5C111.772 83.6167 135.053 107 163.819 107Z" fill="white"/>
+                        <path d="M213.069 105.776V105.164C218.311 105.041 220.748 104.184 220.748 96.9611V9.91647C220.627 2.44851 217.336 1.83638 213.069 1.83638V1.22426H257.803C298.271 1.22426 307.412 61.5801 259.997 65.865L250.612 65.7426V65.9874C279.987 69.4153 283.278 105.164 298.271 105.164V105.776H257.072V105.164C286.325 104.919 279.987 65.865 243.298 65.9874H232.938V97.206C233.059 104.429 236.35 105.164 240.617 105.164V105.776H213.069ZM232.938 9.91647V65.2529H256.584C289.616 65.2529 285.106 1.83638 257.803 1.83638H240.617C236.594 1.83638 233.059 2.69336 232.938 9.91647Z" fill="white"/>
+                        <path d="M295.202 105.776V105.164C300.566 105.164 302.881 104.307 302.881 96.9611V9.91647C302.76 2.69336 299.468 1.95881 295.202 1.83638V1.22426H322.749V1.83638C318.483 1.83638 315.192 2.44851 315.07 9.91647V96.9611C315.07 104.307 317.386 105.164 322.749 105.164H342.496C356.879 104.674 367.361 99.1648 373.578 71.8638H374.187L366.508 105.776H295.202Z" fill="white"/>
+                        <path d="M372.217 105.776V105.164C377.58 105.164 379.774 104.551 379.774 97.206V9.91647C379.652 2.81579 375.995 1.83638 372.217 1.83638V1.22426H411.953C440.597 1.22426 464 24.73 464 53.5C464 82.3924 440.597 105.776 411.953 105.776H372.217ZM406.59 105.164H410.003C464.488 104.796 466.194 1.83638 412.684 1.83638H408.296C393.913 1.95881 391.963 2.93821 391.963 9.91647V97.0835C391.963 104.062 394.279 105.041 406.59 105.164Z" fill="white"/>
+                    </svg>
+                </div>
+                <div class="spacerDiv w-full bg-transparent"></div>
+                <div class="w-full flex justify-center">
+                    <svg
+                    width="169"
+                    height="96"
+                    viewBox="0 0 169 96"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none"
+                    id="noteA3">
+                        <path d="M12.1683 30.5158C8.22184 30.5158 4.93311 27.2579 4.93311 23.3484C4.93311 19.3303 8.22184 16.181 12.1683 16.181C16.2244 16.181 19.4036 19.3303 19.4036 23.3484C19.4036 27.2579 16.2244 30.5158 12.1683 30.5158ZM0 93.8281V93.2851C4.38498 93.2851 6.90635 92.4163 6.90635 86.009V46.371C6.79672 40.8326 6.79672 40.2896 0 43.0045V42.4615L17.8688 35.1855V86.009C17.8688 92.4163 20.3902 93.2851 24.7752 93.2851V93.8281H0Z" fill="white"/>
+                        <path d="M27.3762 96H26.828L24.0874 70.371H24.5259C27.2665 90.4615 38.7771 94.371 48.0952 94.371C61.7983 94.371 68.595 82.6425 52.0417 73.7376L32.7478 63.4208C21.2372 57.2308 25.2933 35.1855 44.8065 35.1855C53.7957 35.1855 60.1539 39.095 61.9079 33.991H62.5657L65.3063 56.905H64.7582C62.7849 40.3982 53.3572 35.7285 44.8065 35.7285C29.5687 35.7285 27.8147 49.1946 41.5177 56.0362L55.9882 63.3122C74.9532 72.8688 68.1565 94.914 48.0952 94.914C37.0231 94.914 27.5954 90.7873 27.3762 96Z" fill="white"/>
+                        <path d="M116.58 52.6697V86.009C116.58 91.4389 118.224 93.2851 123.486 93.2851V93.8281H99.8072V93.2851C105.069 93.2851 105.617 91.4389 105.617 86.009V53.8643C105.617 34.5339 97.0666 34.2081 84.679 40.6154V86.009C84.679 92.4163 87.2004 93.2851 91.5853 93.2851V93.8281H66.4813V93.2851C70.647 93.2851 73.3877 92.6335 73.3877 86.009V45.0679C73.3877 43.8733 73.278 41.7014 71.524 41.7014C70.2085 41.7014 67.9064 42.8959 66.4813 43.3303V42.7873L84.679 35.1855V39.638C101.671 32.362 116.58 32.1448 116.58 52.6697Z" fill="white"/>
+                        <path d="M121.936 25.5204V24.9774C130.925 22.2624 136.516 14.552 136.845 8.57918C135.968 10.6425 134.104 12.2715 131.144 12.2715C122.813 12.2715 122.703 0 131.144 0C132.57 0 133.666 0.325788 134.872 1.08597C142.765 6.08145 134.543 22.2624 121.936 25.5204Z" fill="white"/>
+                        <path d="M168.671 81.9909L169 82.4253C150.035 105.231 144.006 92.9593 144.006 75.5837V35.7285H138.744V35.1855H144.006V22.4796L154.968 17.81V35.1855H162.751V35.7285H154.968V76.1267C154.968 84.9231 153.214 100.778 168.671 81.9909Z" fill="white"/>
+                    </svg>                        
+                </div>
+                <div class="spacerDiv w-full bg-transparent"></div>
+                <div class="w-full flex justify-center">
+                    <svg 
+                    width="133" 
+                    height="96" 
+                    viewBox="0 0 133 96" 
+                    fill="none" 
+                    xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none"
+                    id="noteA4">
+                        <path d="M76.1631 54.2083V87.1626C76.1631 92.5297 77.7744 94.3546 82.9307 94.3546V94.8913H58.6531V94.3546C63.8094 94.3546 65.4207 92.5297 65.4207 87.1626V55.389C65.4207 35.8526 56.612 35.6379 43.5064 42.5079V57.5359C43.5064 67.5188 32.8715 79.5412 27.3929 86.0891C11.3869 105.196 5.15631 93.6032 5.15631 77.1797V37.4627H0V36.926H5.15631V24.6889L15.8986 20.0732V36.926H23.5257V37.4627H15.8986V82.7615C15.8986 91.671 14.1799 100.044 24.7073 87.914C32.5492 78.7898 32.7641 74.9255 32.7641 69.0216V11.0563C32.6567 5.58184 32.6567 5.04513 25.9964 7.7287V7.19199L43.5064 0V41.5418C60.4793 34.1351 76.1631 33.8131 76.1631 54.2083Z" fill="white"/>
+                        <path d="M133 66.1233H90.5678C95.187 101.654 126.662 99.8291 132.033 78.2531H132.57C130.207 89.7388 119.465 95.9647 108.4 95.9647C92.9311 95.9647 80.1478 82.7615 80.1478 66.4454C80.1478 52.4908 88.9565 41.0051 100.558 37.8921C119.465 32.847 133 48.5191 133 66.1233ZM101.847 38.1068C92.1792 40.683 88.9565 53.0275 90.4604 65.5866H121.935C123.224 46.6942 114.416 34.7792 101.847 38.1068Z" fill="white"/>
+                    </svg>
+                </div>
+                <div class="spacerDiv w-full bg-transparent"></div>
+                <div class="w-full flex justify-center">
+                    <svg 
+                    width="728" 
+                    eight="107" 
+                    viewBox="0 0 728 107" 
+                    fill="none" 
+                    xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none"
+                    id="noteA5">
+                        <path d="M94.924 1.95881V1.22426H128.843V1.83638C120.058 2.20366 114.69 12.4874 109.687 27.4233L82.723 107H81.8689L64.2994 61.9474L49.0481 107H48.1941L10.3709 9.91647C8.54072 5.50915 5.00242 1.83638 0 1.83638V1.22426H28.5504V1.83638C22.3279 1.83638 21.4738 4.65217 23.548 9.91647L54.4166 89.3707L64.0554 61.0904L44.0457 9.91647C42.2156 5.50915 38.6773 1.83638 33.6748 1.83638V1.22426H62.2252V1.83638C56.0027 1.83638 55.1486 4.65217 57.2228 9.91647L88.0914 89.3707L106.393 35.381C111.395 20.8124 116.886 1.95881 94.924 1.95881Z" fill="white"/>
+                        <path d="M243.532 104.429C192.287 118.263 164.347 16.5275 216.201 2.57093C267.69 -11.2632 295.386 90.595 243.532 104.429ZM229.866 107C258.539 107 281.965 83.6167 281.965 53.5C281.965 23.5057 258.539 0 229.866 0C201.072 0 177.768 23.5057 177.768 53.5C177.768 83.6167 201.072 107 229.866 107Z" fill="white"/>
+                        <path d="M345.051 105.776V105.164C350.297 105.041 352.737 104.184 352.737 96.9611V9.91647C352.615 2.44851 349.321 1.83638 345.051 1.83638V1.22426H389.829C430.336 1.22426 439.487 61.5801 392.025 65.865L382.63 65.7426V65.9874C412.034 69.4153 415.329 105.164 430.336 105.164V105.776H389.096V105.164C418.379 104.919 412.034 65.865 375.309 65.9874H364.938V97.206C365.06 104.429 368.355 105.164 372.625 105.164V105.776H345.051ZM364.938 9.91647V65.2529H388.608C421.673 65.2529 417.159 1.83638 389.829 1.83638H372.625C368.599 1.83638 365.06 2.69336 364.938 9.91647Z" fill="white"/>
+                        <path d="M493.15 105.776V105.164C498.519 105.164 500.837 104.307 500.837 96.9611V9.91647C500.715 2.69336 497.421 1.95881 493.15 1.83638V1.22426H520.725V1.83638C516.454 1.83638 513.16 2.44851 513.038 9.91647V96.9611C513.038 104.307 515.356 105.164 520.725 105.164H540.49C554.887 104.674 565.38 99.1648 571.603 71.8638H572.213L564.526 105.776H493.15Z" fill="white"/>
+                        <path d="M636.126 105.776V105.164C641.495 105.164 643.691 104.551 643.691 97.206V9.91647C643.569 2.81579 639.909 1.83638 636.126 1.83638V1.22426H675.902C704.574 1.22426 728 24.73 728 53.5C728 82.3924 704.574 105.776 675.902 105.776H636.126ZM670.533 105.164H673.949C728.488 104.796 730.196 1.83638 676.634 1.83638H672.241C657.844 1.95881 655.892 2.93821 655.892 9.91647V97.0835C655.892 104.062 658.21 105.041 670.533 105.164Z" fill="white"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="h-screen">
+        </div>
+        <div class="container mx-auto pt-24 h-screen">
+        </div>
+    </main>
+    <!-- <footer class="mt-12 z-20">
+        <div class="py-2 h-12">
+            <div class="container flex justify-end items-center mx-auto opacity-50">
+                <div class="text-white text-right text-xs">
+                    Copyright © 2023 Warp, ltd.
+                </div>
+            </div>
+        </div>
+    </footer> -->
+</body>
+</html>
+<script>
+window.addEventListener('scroll', handleScroll);
+const viewportHeight = window.innerHeight;
+const initialHeight = 100;
+const finalHeight = 0;
+const triggerOffset = viewportHeight * 0.25;
+
+function handleScroll() {
+    const spacerDivs = document.querySelectorAll(".spacerDiv");
+    spacerDivs.forEach((div) => updateDivHeight(div));
+    distortSvg1();
+    distortSvg2();
+    distortSvg3();
+    distortSvg4();
+    distortSvg5();
+}
+
+function updateDivHeight() {
+    const distanceFromTop = shrinkableDiv.getBoundingClientRect().top;
+
+    if (distanceFromTop > viewportHeight) {
+        // Div is below the viewport, set the initial height
+        shrinkableDiv.style.height = `${initialHeight}px`;
+    } else if (distanceFromTop < -shrinkableDiv.clientHeight) {
+        // Div is above the viewport, set the final height
+        shrinkableDiv.style.height = `${finalHeight}px`;
+    } else if (distanceFromTop < triggerOffset) {
+        // Div is within the 25% region from the top of the viewport, set the final height
+        shrinkableDiv.style.height = `${finalHeight}px`;
+    } else {
+        // Div is within the viewport and above the 25% region, calculate the new height
+        const remainingDistance = triggerOffset - distanceFromTop;
+        const newHeight = initialHeight - (initialHeight / triggerOffset) * remainingDistance;
+        shrinkableDiv.style.height = `${Math.max(finalHeight, newHeight)}px`;
+    }
+}
+
+function distortSvg1() {
+    const middleSvg = document.getElementById('noteA1');
+    const viewportHeight = window.innerHeight;
+    const maxScrollableDistance = document.documentElement.scrollHeight - viewportHeight;
+    const scrollPosition = window.pageYOffset;
+    const scrollPercentage = (scrollPosition / maxScrollableDistance) * 100;
+    let svgHeight = viewportHeight - (scrollPercentage / 50) * viewportHeight;
+  
+    svgHeight = Math.max(svgHeight, 96);
+  
+    middleSvg.style.height = `${svgHeight}px`;
+}
+
+function distortSvg2() {
+    const middleSvg = document.getElementById('noteA2');
+    const viewportHeight = window.innerHeight;
+    const maxScrollableDistance = document.documentElement.scrollHeight - viewportHeight;
+    const scrollPosition = window.pageYOffset;
+    const scrollPercentage = (scrollPosition / maxScrollableDistance) * 100;
+    let svgHeight = viewportHeight - (scrollPercentage / 40) * viewportHeight;
+  
+    svgHeight = Math.max(svgHeight, 107);
+  
+    middleSvg.style.height = `${svgHeight}px`;
+}
+
+function distortSvg3() {
+    const middleSvg = document.getElementById('noteA3');
+    const viewportHeight = window.innerHeight;
+    const maxScrollableDistance = document.documentElement.scrollHeight - viewportHeight;
+    const scrollPosition = window.pageYOffset;
+    const scrollPercentage = (scrollPosition / maxScrollableDistance) * 100;
+    let svgHeight = viewportHeight - (scrollPercentage / 30) * viewportHeight;
+  
+    svgHeight = Math.max(svgHeight, 96);
+  
+    middleSvg.style.height = `${svgHeight}px`;
+}
+
+function distortSvg4() {
+    const middleSvg = document.getElementById('noteA4');
+    const viewportHeight = window.innerHeight;
+    const maxScrollableDistance = document.documentElement.scrollHeight - viewportHeight;
+    const scrollPosition = window.pageYOffset;
+    const scrollPercentage = (scrollPosition / maxScrollableDistance) * 100;
+    let svgHeight = viewportHeight - (scrollPercentage / 40) * viewportHeight;
+  
+    svgHeight = Math.max(svgHeight, 96);
+  
+    middleSvg.style.height = `${svgHeight}px`;
+}
+
+function distortSvg5() {
+    const middleSvg = document.getElementById('noteA5');
+    const viewportHeight = window.innerHeight;
+    const maxScrollableDistance = document.documentElement.scrollHeight - viewportHeight;
+    const scrollPosition = window.pageYOffset;
+    const scrollPercentage = (scrollPosition / maxScrollableDistance) * 100;
+    let svgHeight = viewportHeight - (scrollPercentage / 70) * viewportHeight;
+  
+    svgHeight = Math.max(svgHeight, 107);
+  
+    middleSvg.style.height = `${svgHeight}px`;
+}
+
+function debounce(func, wait) {
+    let timeout;
+    return function executedFunction() {
+        const context = this;
+        const args = arguments;
+        const later = function () {
+            timeout = null;
+            func.apply(context, args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+    };
+}
+</script>
