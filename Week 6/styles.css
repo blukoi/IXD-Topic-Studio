@@ -157,3 +157,11 @@ body {
 #noteA5 {
     height: 107;
 }
+
+#noteA6 {
+    height: 96;
+}
+
+/* .stretched-svg {
+    transition: height 0.5s ease;
+} */
