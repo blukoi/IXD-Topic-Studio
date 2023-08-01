@@ -184,11 +184,17 @@ function distortSvg1() {
     const viewportHeight = window.innerHeight;
     const maxScrollableDistance = document.documentElement.scrollHeight - viewportHeight;
     const scrollPosition = window.pageYOffset;
-    const scrollPercentage = (scrollPosition / maxScrollableDistance) * 100;
-    let svgHeight = viewportHeight - (scrollPercentage / 50) * viewportHeight;
-  
+    const svgOffsetTop = middleSvg.getBoundingClientRect().top;
+    const initialSvgTop = svgOffsetTop - viewportHeight;
+
+    let initialSvgHeight = viewportHeight - (initialSvgTop / maxScrollableDistance) * viewportHeight;
+    initialSvgHeight = Math.max(initialSvgHeight, 96);
+
+    const currentScrollPosition = Math.max(scrollPosition - initialSvgTop, 0);
+    const scrollPercentage = (currentScrollPosition / maxScrollableDistance) * 100;
+    let svgHeight = initialSvgHeight - (scrollPercentage / 50) * initialSvgHeight;
     svgHeight = Math.max(svgHeight, 96);
-  
+
     middleSvg.style.height = `${svgHeight}px`;
 }
 

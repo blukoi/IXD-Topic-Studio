@@ -138,6 +138,10 @@ body {
     transition: height 1s ease;
 }
 
+/* svg {
+    scale: 1;
+} */
+
 #noteA1 {
     height: 96;
 }
@@ -159,9 +163,17 @@ body {
 }
 
 #noteA6 {
+    height: 64;
+}
+
+#noteA7 {
     height: 96;
 }
 
-/* .stretched-svg {
-    transition: height 0.5s ease;
-} */
+#noteA8 {
+    height: 96;
+}
+
+#noteA9 {
+    height: 160;
+}
