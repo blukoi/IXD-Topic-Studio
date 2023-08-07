@@ -22,6 +22,11 @@ h6 {
     font-weight: 100;
 }
 
+.lexend {
+    font-family: 'Lexend Tera', sans-serif;
+    font-weight: 800;
+}
+
 body {
     font-family: 'Roboto Condensed', sans-serif;
 }
@@ -134,7 +139,7 @@ body {
 }
 
 .spacerDiv {
-    height: 100px;
+    height: 64px;
     transition: height 1s ease;
 }
 
@@ -142,23 +147,11 @@ body {
     scale: 1;
 } */
 
-#noteA1 {
+#noteA1, #noteA3, #noteA4, #noteA7, #noteA8, #noteA10, #noteA12, #noteA13, #noteA14, #noteA17, #noteA18, #noteA19, #noteA20, #noteA21 {
     height: 96;
 }
 
-#noteA2 {
-    height: 107;
-}
-
-#noteA3 {
-    height: 96;
-}
-
-#noteA4 {
-    height: 96;
-}
-
-#noteA5 {
+#noteA2, #ntoeA5 {
     height: 107;
 }
 
@@ -166,14 +159,18 @@ body {
     height: 64;
 }
 
-#noteA7 {
-    height: 96;
-}
-
-#noteA8 {
-    height: 96;
-}
-
-#noteA9 {
+#noteA9, #noteA16 {
     height: 160;
+}
+
+#noteA11, #noteA22 {
+    height: 128;
+}
+
+#noteA15 {
+    height: 112;
+}
+
+#noteA10 {
+    transform-origin: left bottom;
 }
