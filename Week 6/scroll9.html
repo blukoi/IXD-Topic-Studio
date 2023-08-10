@@ -15,6 +15,13 @@
     <link rel="prefetch" href="index.html">
     <title>Excerpts from a Note</title>
 </head>
+<style>
+
+svg {
+    overflow: visible;
+}
+
+</style>
 <body class="antialiased">
     <nav>
         <div class="top-0 left-0 w-screen z-[100]">
@@ -31,7 +38,7 @@
         </div>
         <div class="w-screen mx-auto py-48 z-30 h-fit bg-gradient-to-b from-purple-950/0 to-purple-950/20 bg-blend-difference">
             <div class="w-full container mx-auto mt-24 flex flex-col justify-center">
-                <div class="w-full flex justify-center">
+                <div class="w-full flex justify-center scroll-container">
                     <svg
                     width="225"
                     height="96"
@@ -39,10 +46,17 @@
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                     preserveAspectRatio="none"
-                    id="noteA1">
-                        <path d="M0 0H69.7392V12.1348H51.1241V96H18.75V12.1348H0V0Z" fill="black"/>
-                        <path d="M148.536 0H157.844V96H147.862L119.265 55.8202L90.5326 96H80.5506V0H90.2628L119.265 40.7191L148.536 0Z" fill="black"/>
-                        <path d="M222.977 53.1236H200.18L225 83.8652V96H171.313V0H222.977V12.1348L199.64 40.9888H222.977V53.1236Z" fill="black"/>
+                    id="noteA1" >
+                        <defs>
+                            <filter id="DistortFilter1">
+                                <feTurbulence type="fractalNoise" baseFrequency="0.015" numOctaves="2" result="turbulence" data-filterId="5" />
+                                <feDisplacementMap id="distortion1" in="SourceGraphic" in2="turbulence" scale="0">
+                                </feDisplacementMap>
+                            </filter>
+                        </defs>
+                        <path d="M0 0H69.7392V12.1348H51.1241V96H18.75V12.1348H0V0Z" fill="black" filter="url(#DistortFilter1)"/>
+                        <path d="M148.536 0H157.844V96H147.862L119.265 55.8202L90.5326 96H80.5506V0H90.2628L119.265 40.7191L148.536 0Z" fill="black" filter="url(#DistortFilter1)"/>
+                        <path d="M222.977 53.1236H200.18L225 83.8652V96H171.313V0H222.977V12.1348L199.64 40.9888H222.977V53.1236Z" fill="black" filter="url(#DistortFilter1)"/>
                     </svg>
                 </div>
                 <div class="spacerDiv w-full bg-transparent"></div>
@@ -55,11 +69,18 @@
                     xmlns="http://www.w3.org/2000/svg"
                     preserveAspectRatio="none"
                     id="noteA2">
-                        <path d="M122.847 0.878255L82.82 106.854L61.7147 51.5239L40.9006 107L0 0.878255H122.847Z" fill="black"/>
-                        <path d="M226.483 53.1341C226.483 82.5554 203.194 106.415 174.665 106.415C145.991 106.415 122.703 82.5554 122.703 53.1341C122.703 23.7127 145.991 0 174.665 0C203.194 0 226.483 23.7127 226.483 53.1341Z" fill="black"/>
-                        <path d="M276.617 58.9891L313.442 105.097H238.19V0.878255H276.617C292.628 0.878255 305.582 13.9056 305.582 30.0068C305.582 46.1081 292.628 58.9891 276.617 58.9891Z" fill="black"/>
-                        <path d="M359.972 91.9234H382.824V105.097H325.039V0.878255H359.972V91.9234Z" fill="black"/>
-                        <path d="M392.983 0.878255H419.474C448.003 0.878255 471 24.2982 471 52.9877C471 81.6772 448.003 105.097 419.474 105.097H392.983V0.878255Z" fill="black"/>
+                        <defs>
+                            <filter id="DistortFilter2">
+                                <feTurbulence type="fractalNoise" baseFrequency="0.015" numOctaves="2" result="turbulence" data-filterId="5" />
+                                <feDisplacementMap id="distortion2" in="SourceGraphic" in2="turbulence" scale="0">
+                                </feDisplacementMap>
+                            </filter>
+                        </defs>
+                        <path d="M122.847 0.878255L82.82 106.854L61.7147 51.5239L40.9006 107L0 0.878255H122.847Z" fill="black" filter="url(#DistortFilter2)"/>
+                        <path d="M226.483 53.1341C226.483 82.5554 203.194 106.415 174.665 106.415C145.991 106.415 122.703 82.5554 122.703 53.1341C122.703 23.7127 145.991 0 174.665 0C203.194 0 226.483 23.7127 226.483 53.1341Z" fill="black" filter="url(#DistortFilter2)"/>
+                        <path d="M276.617 58.9891L313.442 105.097H238.19V0.878255H276.617C292.628 0.878255 305.582 13.9056 305.582 30.0068C305.582 46.1081 292.628 58.9891 276.617 58.9891Z" fill="black" filter="url(#DistortFilter2)"/>
+                        <path d="M359.972 91.9234H382.824V105.097H325.039V0.878255H359.972V91.9234Z" fill="black" filter="url(#DistortFilter2)"/>
+                        <path d="M392.983 0.878255H419.474C448.003 0.878255 471 24.2982 471 52.9877C471 81.6772 448.003 105.097 419.474 105.097H392.983V0.878255Z" fill="black" filter="url(#DistortFilter2)"/>
                     </svg>
                 </div>
                 <div class="spacerDiv w-full bg-transparent"></div>
@@ -72,11 +93,18 @@
                     xmlns="http://www.w3.org/2000/svg"
                     preserveAspectRatio="none"
                     id="noteA3">
-                        <path d="M12.8383 1.57377V94.9508H0V1.57377H12.8383Z" fill="black"/>
-                        <path d="M57.6733 42.8852C69.5946 47.4754 81.5159 56.1312 81.5159 70.6885C81.5159 87.082 66.7125 96 51.1231 96C43.7869 96 28.4595 93.7705 23.3503 87.8689L49.158 53.3771C38.0227 48.1311 25.5774 39.8689 25.5774 25.5738C25.5774 9.04918 39.5948 0.524591 55.3152 0.524591C65.2715 0.524591 75.3587 3.54098 84.005 8.52459C57.5423 42.8852 57.6733 42.8852 57.6733 42.8852Z" fill="black"/>
-                        <path d="M154.149 1.57377H166.987V94.9508H94.5425V0L154.149 74.6229V1.57377Z" fill="black"/>
-                        <path d="M187.466 3.14754C192.968 3.14754 197.422 7.60656 197.422 13.1148C197.422 14.5574 196.898 16.7869 195.719 18.7541L187.728 31.3443H180.13L185.239 22.9508C180.785 21.9016 177.51 17.9672 177.51 13.1148C177.51 7.60656 181.964 3.14754 187.466 3.14754Z" fill="black"/>
-                        <path d="M205.271 1.57377H273V13.377H254.922V94.9508H223.481V13.377H205.271V1.57377Z" fill="black"/>
+                        <defs>
+                            <filter id="DistortFilter3">
+                                <feTurbulence type="fractalNoise" baseFrequency="0.015" numOctaves="2" result="turbulence" data-filterId="5" />
+                                <feDisplacementMap id="distortion3" in="SourceGraphic" in2="turbulence" scale="0">
+                                </feDisplacementMap>
+                            </filter>
+                        </defs>
+                        <path d="M12.8383 1.57377V94.9508H0V1.57377H12.8383Z" fill="black" filter="url(#DistortFilter3)"/>
+                        <path d="M57.6733 42.8852C69.5946 47.4754 81.5159 56.1312 81.5159 70.6885C81.5159 87.082 66.7125 96 51.1231 96C43.7869 96 28.4595 93.7705 23.3503 87.8689L49.158 53.3771C38.0227 48.1311 25.5774 39.8689 25.5774 25.5738C25.5774 9.04918 39.5948 0.524591 55.3152 0.524591C65.2715 0.524591 75.3587 3.54098 84.005 8.52459C57.5423 42.8852 57.6733 42.8852 57.6733 42.8852Z" fill="black" filter="url(#DistortFilter3)"/>
+                        <path d="M154.149 1.57377H166.987V94.9508H94.5425V0L154.149 74.6229V1.57377Z" fill="black" filter="url(#DistortFilter3)"/>
+                        <path d="M187.466 3.14754C192.968 3.14754 197.422 7.60656 197.422 13.1148C197.422 14.5574 196.898 16.7869 195.719 18.7541L187.728 31.3443H180.13L185.239 22.9508C180.785 21.9016 177.51 17.9672 177.51 13.1148C177.51 7.60656 181.964 3.14754 187.466 3.14754Z" fill="black" filter="url(#DistortFilter3)"/>
+                        <path d="M205.271 1.57377H273V13.377H254.922V94.9508H223.481V13.377H205.271V1.57377Z" fill="black" filter="url(#DistortFilter3)"/>
                     </svg>
                 </div>
                 <div class="spacerDiv w-full bg-transparent"></div>
@@ -89,9 +117,16 @@
                     xmlns="http://www.w3.org/2000/svg"
                     preserveAspectRatio="none"
                     id="noteA4">
-                        <path d="M0 0H69.7392V12.1348H51.1241V96H18.75V12.1348H0V0Z" fill="black"/>
-                        <path d="M148.536 0H157.844V96H147.862L119.265 55.8202L90.5326 96H80.5506V0H90.2628L119.265 40.7191L148.536 0Z" fill="black"/>
-                        <path d="M222.977 53.1236H200.18L225 83.8652V96H171.313V0H222.977V12.1348L199.64 40.9888H222.977V53.1236Z" fill="black"/>
+                        <defs>
+                            <filter id="DistortFilter4">
+                                <feTurbulence type="fractalNoise" baseFrequency="0.015" numOctaves="2" result="turbulence" data-filterId="5" />
+                                <feDisplacementMap id="distortion4" in="SourceGraphic" in2="turbulence" scale="0">
+                                </feDisplacementMap>
+                            </filter>
+                        </defs>
+                        <path d="M0 0H69.7392V12.1348H51.1241V96H18.75V12.1348H0V0Z" fill="black" filter="url(#DistortFilter4)"/>
+                        <path d="M148.536 0H157.844V96H147.862L119.265 55.8202L90.5326 96H80.5506V0H90.2628L119.265 40.7191L148.536 0Z" fill="black" filter="url(#DistortFilter4)"/>
+                        <path d="M222.977 53.1236H200.18L225 83.8652V96H171.313V0H222.977V12.1348L199.64 40.9888H222.977V53.1236Z" fill="black" filter="url(#DistortFilter4)"/>
                     </svg>
                 </div>
                 <div class="spacerDiv w-full bg-transparent"></div>
@@ -104,7 +139,14 @@
                     xmlns="http://www.w3.org/2000/svg"
                     preserveAspectRatio="none"
                     id="noteA5">
-                        <path d="M57.9138 50.1199L40.8136 95.7382L5.82657 4.87825H116.952L82.7272 95.573L65.3971 50.0995L61.6284 40.2106L57.9138 50.1199ZM349.08 54.9891H340.771L345.953 61.4839L377.562 101.097H314.688V4.87825H349.08C362.843 4.87825 374.019 16.0901 374.019 30.0068C374.019 43.8973 362.869 54.9891 349.08 54.9891ZM464.716 91.9234V95.9234H468.716H487.548V101.097H437.815V4.87825H464.716V91.9234ZM258.635 53.1341C258.635 80.4511 237.055 102.414 210.864 102.414C184.521 102.414 162.948 80.4437 162.948 53.1341C162.948 25.8389 184.507 4 210.864 4C237.069 4 258.635 25.8315 258.635 53.1341ZM542.053 4.87825H564.52C590.76 4.87825 612 26.4532 612 52.9877C612 79.5222 590.76 101.097 564.52 101.097H542.053V4.87825Z" stroke="black" stroke-width="8"/>
+                        <defs>
+                            <filter id="DistortFilter5">
+                                <feTurbulence type="fractalNoise" baseFrequency="0.015" numOctaves="2" result="turbulence" data-filterId="5" />
+                                <feDisplacementMap id="distortion5" in="SourceGraphic" in2="turbulence" scale="0">
+                                </feDisplacementMap>
+                            </filter>
+                        </defs>
+                        <path d="M57.9138 50.1199L40.8136 95.7382L5.82657 4.87825H116.952L82.7272 95.573L65.3971 50.0995L61.6284 40.2106L57.9138 50.1199ZM349.08 54.9891H340.771L345.953 61.4839L377.562 101.097H314.688V4.87825H349.08C362.843 4.87825 374.019 16.0901 374.019 30.0068C374.019 43.8973 362.869 54.9891 349.08 54.9891ZM464.716 91.9234V95.9234H468.716H487.548V101.097H437.815V4.87825H464.716V91.9234ZM258.635 53.1341C258.635 80.4511 237.055 102.414 210.864 102.414C184.521 102.414 162.948 80.4437 162.948 53.1341C162.948 25.8389 184.507 4 210.864 4C237.069 4 258.635 25.8315 258.635 53.1341ZM542.053 4.87825H564.52C590.76 4.87825 612 26.4532 612 52.9877C612 79.5222 590.76 101.097 564.52 101.097H542.053V4.87825Z" stroke="black" stroke-width="8" filter="url(#DistortFilter5)"/>
                     </svg>
                 </div>
             </div>
@@ -120,31 +162,38 @@
                     xmlns="http://www.w3.org/2000/svg"
                     preserveAspectRatio="none"
                     id="noteA6">
-                        <path d="M8.50172 1.30435V63.2174H0V1.30435H8.50172Z" fill="black"/>
-                        <path d="M38.886 1.30435H54.6749C71.6783 1.30435 85.3852 15.2174 85.3852 32.2609C85.3852 49.3043 71.6783 63.2174 54.6749 63.2174H38.886V1.30435Z" fill="black"/>
-                        <path d="M152.463 32.3478C152.463 49.8261 138.583 64 121.579 64C104.489 64 90.6086 49.8261 90.6086 32.3478C90.6086 14.8696 104.489 0.782609 121.579 0.782609C138.583 0.782609 152.463 14.8696 152.463 32.3478Z" fill="black"/>
-                        <path d="M198.913 1.30435H207.415V63.2174H159.441V0.260871L198.913 49.7391V1.30435Z" fill="black"/>
-                        <path d="M220.976 2.34783C224.62 2.34783 227.569 5.30435 227.569 8.95653C227.569 9.91305 227.222 11.3913 226.442 12.6957L221.15 21.0435H216.118L219.501 15.4783C216.552 14.7826 214.383 12.1739 214.383 8.95653C214.383 5.30435 217.333 2.34783 220.976 2.34783Z" fill="black"/>
-                        <path d="M232.767 1.30435H277.618V9.13044H265.646V63.2174H244.826V9.13044H232.767V1.30435Z" fill="black"/>
-                        <path d="M329.162 35.8261L351.11 63.2174H306.259V1.30435H329.162C338.704 1.30435 346.425 9.04348 346.425 18.6087C346.425 28.1739 338.704 35.8261 329.162 35.8261Z" fill="black"/>
-                        <path d="M391.248 35.5652H376.587L392.55 55.3913V63.2174H358.022V1.30435H391.248V9.13044L376.24 27.7391H391.248V35.5652Z" fill="black"/>
-                        <path d="M430.378 32.3478L449.984 56.7826C444.692 61.3043 437.838 64 430.378 64C413.287 64 399.494 49.8261 399.494 32.3478C399.494 14.8696 413.287 0.695654 430.378 0.695654C437.838 0.695654 444.692 3.39131 449.984 7.91304L430.378 32.3478Z" fill="black"/>
-                        <path d="M517.009 32.3478C517.009 49.8261 503.128 64 486.125 64C469.035 64 455.154 49.8261 455.154 32.3478C455.154 14.8696 469.035 0.782609 486.125 0.782609C503.128 0.782609 517.009 14.8696 517.009 32.3478Z" fill="black"/>
-                        <path d="M550.706 35.6522H583.932C582.284 51.5652 569.185 63.913 553.222 63.913C536.132 63.913 522.252 49.7391 522.252 32.2609C522.252 14.7826 536.132 0.608698 553.222 0.608698C560.683 0.608698 567.536 3.30435 572.828 7.82609L550.706 35.6522Z" fill="black"/>
-                        <path d="M630.387 1.30435H638.889V63.2174H590.915V0.260871L630.387 49.7391V1.30435Z" fill="black"/>
-                        <path d="M656.093 1.30435V63.2174H647.592V1.30435H656.093Z" fill="black"/>
-                        <path d="M666.091 1.30435H709.12V63.2174H663.055L701.833 9.39131H666.091V1.30435Z" fill="black"/>
-                        <path d="M751.05 35.5652H736.389L752.351 55.3913V63.2174H717.824V1.30435H751.05V9.13044L736.042 27.7391H751.05V35.5652Z" fill="black"/>
-                        <path d="M791.22 1.30435V63.2174H782.718V1.30435H791.22Z" fill="black"/>
-                        <path d="M798.181 1.30435H843.032V9.13044H831.06V63.2174H810.24V9.13044H798.181V1.30435Z" fill="black"/>
-                        <path d="M869.071 63.2174L895.443 0L921.729 63.2174H869.071Z" fill="black"/>
-                        <path d="M967.314 1.30435H975.816V63.2174H927.842V0.260871L967.314 49.7391V1.30435Z" fill="black"/>
-                        <path d="M981.916 1.30435H1037.44L1013.84 30.1739V63.2174H1005.34V30.1739L981.916 1.30435Z" fill="black"/>
-                        <path d="M1043.48 0.260871L1072.11 35.8261L1100.74 0.260871V63.2174H1043.48V0.260871Z" fill="black"/>
-                        <path d="M1169.51 32.3478C1169.51 49.8261 1155.63 64 1138.63 64C1121.54 64 1107.66 49.8261 1107.66 32.3478C1107.66 14.8696 1121.54 0.782609 1138.63 0.782609C1155.63 0.782609 1169.51 14.8696 1169.51 32.3478Z" fill="black"/>
-                        <path d="M1199.39 35.8261L1221.34 63.2174H1176.49V1.30435H1199.39C1208.94 1.30435 1216.66 9.04348 1216.66 18.6087C1216.66 28.1739 1208.94 35.8261 1199.39 35.8261Z" fill="black"/>
-                        <path d="M1261.48 35.5652H1246.82L1262.78 55.3913V63.2174H1228.26V1.30435H1261.48V9.13044L1246.47 27.7391H1261.48V35.5652Z" fill="black"/>
-                        <path d="M1283 56.9565C1283 60.6957 1280.05 63.6522 1276.41 63.6522C1272.76 63.6522 1269.73 60.6957 1269.73 56.9565C1269.73 53.3043 1272.76 50.3478 1276.41 50.3478C1280.05 50.3478 1283 53.3043 1283 56.9565Z" fill="black"/>
+                        <defs>
+                            <filter id="DistortFilter6">
+                                <feTurbulence type="fractalNoise" baseFrequency="0.015" numOctaves="2" result="turbulence" data-filterId="5" />
+                                <feDisplacementMap id="distortion6" in="SourceGraphic" in2="turbulence" scale="0">
+                                </feDisplacementMap>
+                            </filter>
+                        </defs>
+                        <path d="M8.50172 1.30435V63.2174H0V1.30435H8.50172Z" fill="black" filter="url(#DistortFilter6)"/>
+                        <path d="M38.886 1.30435H54.6749C71.6783 1.30435 85.3852 15.2174 85.3852 32.2609C85.3852 49.3043 71.6783 63.2174 54.6749 63.2174H38.886V1.30435Z" fill="black" filter="url(#DistortFilter6)"/>
+                        <path d="M152.463 32.3478C152.463 49.8261 138.583 64 121.579 64C104.489 64 90.6086 49.8261 90.6086 32.3478C90.6086 14.8696 104.489 0.782609 121.579 0.782609C138.583 0.782609 152.463 14.8696 152.463 32.3478Z" fill="black" filter="url(#DistortFilter6)"/>
+                        <path d="M198.913 1.30435H207.415V63.2174H159.441V0.260871L198.913 49.7391V1.30435Z" fill="black" filter="url(#DistortFilter6)"/>
+                        <path d="M220.976 2.34783C224.62 2.34783 227.569 5.30435 227.569 8.95653C227.569 9.91305 227.222 11.3913 226.442 12.6957L221.15 21.0435H216.118L219.501 15.4783C216.552 14.7826 214.383 12.1739 214.383 8.95653C214.383 5.30435 217.333 2.34783 220.976 2.34783Z" fill="black" filter="url(#DistortFilter6)"/>
+                        <path d="M232.767 1.30435H277.618V9.13044H265.646V63.2174H244.826V9.13044H232.767V1.30435Z" fill="black" filter="url(#DistortFilter6)"/>
+                        <path d="M329.162 35.8261L351.11 63.2174H306.259V1.30435H329.162C338.704 1.30435 346.425 9.04348 346.425 18.6087C346.425 28.1739 338.704 35.8261 329.162 35.8261Z" fill="black" filter="url(#DistortFilter6)"/>
+                        <path d="M391.248 35.5652H376.587L392.55 55.3913V63.2174H358.022V1.30435H391.248V9.13044L376.24 27.7391H391.248V35.5652Z" fill="black" filter="url(#DistortFilter6)"/>
+                        <path d="M430.378 32.3478L449.984 56.7826C444.692 61.3043 437.838 64 430.378 64C413.287 64 399.494 49.8261 399.494 32.3478C399.494 14.8696 413.287 0.695654 430.378 0.695654C437.838 0.695654 444.692 3.39131 449.984 7.91304L430.378 32.3478Z" fill="black" filter="url(#DistortFilter6)"/>
+                        <path d="M517.009 32.3478C517.009 49.8261 503.128 64 486.125 64C469.035 64 455.154 49.8261 455.154 32.3478C455.154 14.8696 469.035 0.782609 486.125 0.782609C503.128 0.782609 517.009 14.8696 517.009 32.3478Z" fill="black" filter="url(#DistortFilter6)"/>
+                        <path d="M550.706 35.6522H583.932C582.284 51.5652 569.185 63.913 553.222 63.913C536.132 63.913 522.252 49.7391 522.252 32.2609C522.252 14.7826 536.132 0.608698 553.222 0.608698C560.683 0.608698 567.536 3.30435 572.828 7.82609L550.706 35.6522Z" fill="black" filter="url(#DistortFilter6)"/>
+                        <path d="M630.387 1.30435H638.889V63.2174H590.915V0.260871L630.387 49.7391V1.30435Z" fill="black" filter="url(#DistortFilter6)"/>
+                        <path d="M656.093 1.30435V63.2174H647.592V1.30435H656.093Z" fill="black" filter="url(#DistortFilter6)"/>
+                        <path d="M666.091 1.30435H709.12V63.2174H663.055L701.833 9.39131H666.091V1.30435Z" fill="black" filter="url(#DistortFilter6)"/>
+                        <path d="M751.05 35.5652H736.389L752.351 55.3913V63.2174H717.824V1.30435H751.05V9.13044L736.042 27.7391H751.05V35.5652Z" fill="black" filter="url(#DistortFilter6)"/>
+                        <path d="M791.22 1.30435V63.2174H782.718V1.30435H791.22Z" fill="black" filter="url(#DistortFilter6)"/>
+                        <path d="M798.181 1.30435H843.032V9.13044H831.06V63.2174H810.24V9.13044H798.181V1.30435Z" fill="black" filter="url(#DistortFilter6)"/>
+                        <path d="M869.071 63.2174L895.443 0L921.729 63.2174H869.071Z" fill="black" filter="url(#DistortFilter6)"/>
+                        <path d="M967.314 1.30435H975.816V63.2174H927.842V0.260871L967.314 49.7391V1.30435Z" fill="black" filter="url(#DistortFilter6)"/>
+                        <path d="M981.916 1.30435H1037.44L1013.84 30.1739V63.2174H1005.34V30.1739L981.916 1.30435Z" fill="black" filter="url(#DistortFilter6)"/>
+                        <path d="M1043.48 0.260871L1072.11 35.8261L1100.74 0.260871V63.2174H1043.48V0.260871Z" fill="black" filter="url(#DistortFilter6)"/>
+                        <path d="M1169.51 32.3478C1169.51 49.8261 1155.63 64 1138.63 64C1121.54 64 1107.66 49.8261 1107.66 32.3478C1107.66 14.8696 1121.54 0.782609 1138.63 0.782609C1155.63 0.782609 1169.51 14.8696 1169.51 32.3478Z" fill="black" filter="url(#DistortFilter6)"/>
+                        <path d="M1199.39 35.8261L1221.34 63.2174H1176.49V1.30435H1199.39C1208.94 1.30435 1216.66 9.04348 1216.66 18.6087C1216.66 28.1739 1208.94 35.8261 1199.39 35.8261Z" fill="black" filter="url(#DistortFilter6)"/>
+                        <path d="M1261.48 35.5652H1246.82L1262.78 55.3913V63.2174H1228.26V1.30435H1261.48V9.13044L1246.47 27.7391H1261.48V35.5652Z" fill="black" filter="url(#DistortFilter6)"/>
+                        <path d="M1283 56.9565C1283 60.6957 1280.05 63.6522 1276.41 63.6522C1272.76 63.6522 1269.73 60.6957 1269.73 56.9565C1269.73 53.3043 1272.76 50.3478 1276.41 50.3478C1280.05 50.3478 1283 53.3043 1283 56.9565Z" fill="black" filter="url(#DistortFilter6)"/>
                     </svg>
                 </div>
             </div>
@@ -456,445 +505,101 @@
 window.addEventListener('scroll', handleScroll);
 
 function handleScroll() {
-    distortSvg1();
-    distortSvg2();
-    distortSvg3();
-    distortSvg4();
-    distortSvg5();
-    lengthenSvg6();
-    distortSvg7();
-    distortSvg8();
-    distortSvg9();
-    lengthenSvg10();
-    lengthenSvg11();
-    distortSvg12();
-    distortSvg13();
-    distortSvg14();
-    lengthenSvg15();
-    distortSvg16();
-    distortSvg17();
-    distortSvg18();
-    distortSvg19();
-    distortSvg20();
-    distortSvg21();
-    lengthenSvg22();
-
-
-    transformSvg6();
-    transformSvg10();
-    transformSvg11();
-    transformSvg15();
-    transformSvg22();
+    SVGdistortion1();
+    SVGdistortion2();
+    SVGdistortion3();
+    SVGdistortion4();
+    SVGdistortion5();
+    SVGdistortion6();
 }
 
-function distortSvg1() {
-    const middleSvg = document.getElementById('noteA1');
+function SVGdistortion1() {
+    const svg = document.getElementById('noteA1');
     const viewportHeight = window.innerHeight;
-    const svgOffsetTop = middleSvg.getBoundingClientRect().top;
+    const topViewportHeight = 0.75 * viewportHeight; // 75% of viewport height
+    const svgRect = svg.getBoundingClientRect();
+    const svgTopOffset = svgRect.top;
 
-    const initialSvgHeight = 300;
-    const minSvgHeight = 96;
+    // Calculate the percentage based on the top 75% of the viewport
+    const transformPercentage = Math.max(0, 100 - ((svgTopOffset / topViewportHeight) * 100));
+    const scaleValue = 0 + (transformPercentage / 100) * 300;
 
-    let svgHeight = minSvgHeight + (svgOffsetTop / viewportHeight) * (initialSvgHeight - minSvgHeight);
-    svgHeight = Math.min(svgHeight, initialSvgHeight);
-
-    middleSvg.style.height = `${svgHeight}px`;
+    const filterElement = document.getElementById('distortion1'); // Get the feDisplacementMap element
+    filterElement.setAttribute('scale', scaleValue); // Set the new scale value
 }
 
-function distortSvg2() {
-    const middleSvg = document.getElementById('noteA2');
+function SVGdistortion2() {
+    const svg = document.getElementById('noteA2');
     const viewportHeight = window.innerHeight;
-    const svgOffsetTop = middleSvg.getBoundingClientRect().top;
+    const topViewportHeight = 0.75 * viewportHeight; // 75% of viewport height
+    const svgRect = svg.getBoundingClientRect();
+    const svgTopOffset = svgRect.top;
 
-    const initialSvgHeight = 300;
-    const minSvgHeight = 107;
+    // Calculate the percentage based on the top 75% of the viewport
+    const transformPercentage = Math.max(0, 100 - ((svgTopOffset / topViewportHeight) * 100));
+    const scaleValue = 0 + (transformPercentage / 100) * 300;
 
-    let svgHeight = minSvgHeight + (svgOffsetTop / viewportHeight) * (initialSvgHeight - minSvgHeight);
-    svgHeight = Math.min(svgHeight, initialSvgHeight);
-
-    middleSvg.style.height = `${svgHeight}px`;
+    const filterElement = document.getElementById('distortion2'); // Get the feDisplacementMap element
+    filterElement.setAttribute('scale', scaleValue); // Set the new scale value
 }
 
-function distortSvg3() {
-    const middleSvg = document.getElementById('noteA3');
+function SVGdistortion3() {
+    const svg = document.getElementById('noteA3');
     const viewportHeight = window.innerHeight;
-    const svgOffsetTop = middleSvg.getBoundingClientRect().top;
+    const topViewportHeight = 0.75 * viewportHeight; // 75% of viewport height
+    const svgRect = svg.getBoundingClientRect();
+    const svgTopOffset = svgRect.top;
 
-    const initialSvgHeight = 300;
-    const minSvgHeight = 96;
+    // Calculate the percentage based on the top 75% of the viewport
+    const transformPercentage = Math.max(0, 100 - ((svgTopOffset / topViewportHeight) * 100));
+    const scaleValue = 0 + (transformPercentage / 100) * 300;
 
-    let svgHeight = minSvgHeight + (svgOffsetTop / viewportHeight) * (initialSvgHeight - minSvgHeight);
-    svgHeight = Math.min(svgHeight, initialSvgHeight);
-
-    middleSvg.style.height = `${svgHeight}px`;
+    const filterElement = document.getElementById('distortion3'); // Get the feDisplacementMap element
+    filterElement.setAttribute('scale', scaleValue); // Set the new scale value
 }
 
-function distortSvg4() {
-    const middleSvg = document.getElementById('noteA4');
+function SVGdistortion4() {
+    const svg = document.getElementById('noteA4');
     const viewportHeight = window.innerHeight;
-    const svgOffsetTop = middleSvg.getBoundingClientRect().top;
+    const topViewportHeight = 0.75 * viewportHeight; // 75% of viewport height
+    const svgRect = svg.getBoundingClientRect();
+    const svgTopOffset = svgRect.top;
 
-    const initialSvgHeight = 300;
-    const minSvgHeight = 96;
+    // Calculate the percentage based on the top 75% of the viewport
+    const transformPercentage = Math.max(0, 100 - ((svgTopOffset / topViewportHeight) * 100));
+    const scaleValue = 0 + (transformPercentage / 100) * 300;
 
-    let svgHeight = minSvgHeight + (svgOffsetTop / viewportHeight) * (initialSvgHeight - minSvgHeight);
-    svgHeight = Math.min(svgHeight, initialSvgHeight);
-
-    middleSvg.style.height = `${svgHeight}px`;
+    const filterElement = document.getElementById('distortion4'); // Get the feDisplacementMap element
+    filterElement.setAttribute('scale', scaleValue); // Set the new scale value
 }
 
-function distortSvg5() {
-    const middleSvg = document.getElementById('noteA5');
+function SVGdistortion5() {
+    const svg = document.getElementById('noteA5');
     const viewportHeight = window.innerHeight;
-    const svgOffsetTop = middleSvg.getBoundingClientRect().top;
+    const topViewportHeight = 0.75 * viewportHeight; // 75% of viewport height
+    const svgRect = svg.getBoundingClientRect();
+    const svgTopOffset = svgRect.top;
 
-    const initialSvgHeight = 500;
-    const minSvgHeight = 107;
+    // Calculate the percentage based on the top 75% of the viewport
+    const transformPercentage = Math.max(0, 100 - ((svgTopOffset / topViewportHeight) * 100));
+    const scaleValue = 0 + (transformPercentage / 100) * 300;
 
-    let svgHeight = minSvgHeight + (svgOffsetTop / viewportHeight) * (initialSvgHeight - minSvgHeight);
-    svgHeight = Math.min(svgHeight, initialSvgHeight);
-
-    middleSvg.style.height = `${svgHeight}px`;
+    const filterElement = document.getElementById('distortion5'); // Get the feDisplacementMap element
+    filterElement.setAttribute('scale', scaleValue); // Set the new scale value
 }
 
-// THIS ONE INCREASES HEIGHT
-function lengthenSvg6() {
-    const middleSvg = document.getElementById('noteA6');
-    const svgRect = middleSvg.getBoundingClientRect();
-    const svgTop = svgRect.top;
-    const svgBottom = svgRect.bottom;
-    const svgDistanceFromTop = svgTop > 0 ? svgTop : 0;
-    const distancePercentage = (svgDistanceFromTop / window.innerHeight) * 100;
-
-    let svgHeight = (100 - distancePercentage) / 100 * window.innerHeight;
-    svgHeight = Math.max(svgHeight, 96);
-
-    middleSvg.style.height = `${svgHeight}px`;
-}
-
-function distortSvg7() {
-    const middleSvg = document.getElementById('noteA7');
-    const viewportHeight = window.innerHeight;
-    const svgOffsetTop = middleSvg.getBoundingClientRect().top;
-
-    const initialSvgHeight = 300;
-    const minSvgHeight = 96;
-
-    let svgHeight = minSvgHeight + (svgOffsetTop / viewportHeight) * (initialSvgHeight - minSvgHeight);
-    svgHeight = Math.min(svgHeight, initialSvgHeight);
-
-    middleSvg.style.height = `${svgHeight}px`;
-}
-
-function distortSvg8() {
-    const middleSvg = document.getElementById('noteA8');
-    const viewportHeight = window.innerHeight;
-    const svgOffsetTop = middleSvg.getBoundingClientRect().top;
-
-    const initialSvgHeight = 300;
-    const minSvgHeight = 96;
-
-    let svgHeight = minSvgHeight + (svgOffsetTop / viewportHeight) * (initialSvgHeight - minSvgHeight);
-    svgHeight = Math.min(svgHeight, initialSvgHeight);
-
-    middleSvg.style.height = `${svgHeight}px`;
-}
-
-function distortSvg9() {
-    const middleSvg = document.getElementById('noteA9');
-    const viewportHeight = window.innerHeight;
-    const svgOffsetTop = middleSvg.getBoundingClientRect().top;
-
-    const initialSvgHeight = 500;
-    const minSvgHeight = 160;
-
-    let svgHeight = minSvgHeight + (svgOffsetTop / viewportHeight) * (initialSvgHeight - minSvgHeight);
-    svgHeight = Math.min(svgHeight, initialSvgHeight);
-
-    middleSvg.style.height = `${svgHeight}px`;
-}
-
-// THIS ONE INCREASES HEIGHT
-function lengthenSvg10() {
-    const middleSvg = document.getElementById('noteA10');
-    const svgRect = middleSvg.getBoundingClientRect();
-    const svgTop = svgRect.top;
-    const svgBottom = svgRect.bottom;
-    const svgDistanceFromTop = svgTop > 0 ? svgTop : 0;
-    const distancePercentage = (svgDistanceFromTop / window.innerHeight) * 100;
-
-    let svgHeight = (100 - distancePercentage) / 100 * window.innerHeight;
-    svgHeight = Math.max(svgHeight, 96);
-
-    middleSvg.style.height = `${svgHeight}px`;
-}
-
-// THIS ONE INCREASES HEIGHT
-function lengthenSvg11() {
-    const middleSvg = document.getElementById('noteA11');
-    const svgRect = middleSvg.getBoundingClientRect();
-    const svgTop = svgRect.top;
-    const svgBottom = svgRect.bottom;
-    const svgDistanceFromTop = svgTop > 0 ? svgTop : 0;
-    const distancePercentage = (svgDistanceFromTop / window.innerHeight) * 100;
-
-    let svgHeight = (100 - distancePercentage) / 100 * window.innerHeight;
-    svgHeight = Math.max(svgHeight, 128);
-
-    middleSvg.style.height = `${svgHeight}px`;
-}
-
-function distortSvg12() {
-    const middleSvg = document.getElementById('noteA12');
-    const viewportHeight = window.innerHeight;
-    const svgOffsetTop = middleSvg.getBoundingClientRect().top;
-
-    const initialSvgHeight = 500;
-    const minSvgHeight = 96;
-
-    let svgHeight = minSvgHeight + (svgOffsetTop / viewportHeight) * (initialSvgHeight - minSvgHeight);
-    svgHeight = Math.min(svgHeight, initialSvgHeight);
-
-    middleSvg.style.height = `${svgHeight}px`;
-}
-
-function distortSvg13() {
-    const middleSvg = document.getElementById('noteA13');
-    const viewportHeight = window.innerHeight;
-    const svgOffsetTop = middleSvg.getBoundingClientRect().top;
-
-    const initialSvgHeight = 500;
-    const minSvgHeight = 96;
-
-    let svgHeight = minSvgHeight + (svgOffsetTop / viewportHeight) * (initialSvgHeight - minSvgHeight);
-    svgHeight = Math.min(svgHeight, initialSvgHeight);
-
-    middleSvg.style.height = `${svgHeight}px`;
-}
-
-function distortSvg14() {
-    const middleSvg = document.getElementById('noteA14');
-    const viewportHeight = window.innerHeight;
-    const svgOffsetTop = middleSvg.getBoundingClientRect().top;
-
-    const initialSvgHeight = 500;
-    const minSvgHeight = 96;
-
-    let svgHeight = minSvgHeight + (svgOffsetTop / viewportHeight) * (initialSvgHeight - minSvgHeight);
-    svgHeight = Math.min(svgHeight, initialSvgHeight);
-
-    middleSvg.style.height = `${svgHeight}px`;
-}
-
-// THIS ONE INCREASES HEIGHT
-function lengthenSvg15() {
-    const middleSvg = document.getElementById('noteA15');
-    const svgRect = middleSvg.getBoundingClientRect();
-    const svgTop = svgRect.top;
-    const svgBottom = svgRect.bottom;
-    const svgDistanceFromTop = svgTop > 0 ? svgTop : 0;
-    const distancePercentage = (svgDistanceFromTop / window.innerHeight) * 100;
-
-    let svgHeight = (100 - distancePercentage) / 100 * window.innerHeight;
-    svgHeight = Math.max(svgHeight, 112);
-
-    middleSvg.style.height = `${svgHeight}px`;
-}
-
-function distortSvg16() {
-    const middleSvg = document.getElementById('noteA16');
-    const viewportHeight = window.innerHeight;
-    const svgOffsetTop = middleSvg.getBoundingClientRect().top;
-
-    const initialSvgHeight = 320;
-    const minSvgHeight = 160;
-
-    let svgHeight = minSvgHeight + (svgOffsetTop / viewportHeight) * (initialSvgHeight - minSvgHeight);
-    svgHeight = Math.min(svgHeight, initialSvgHeight);
-
-    middleSvg.style.height = `${svgHeight}px`;
-}
-
-function distortSvg17() {
-    const middleSvg = document.getElementById('noteA17');
-    const viewportHeight = window.innerHeight;
-    const svgOffsetTop = middleSvg.getBoundingClientRect().top;
-
-    const initialSvgHeight = 500;
-    const minSvgHeight = 96;
-
-    let svgHeight = minSvgHeight + (svgOffsetTop / viewportHeight) * (initialSvgHeight - minSvgHeight);
-    svgHeight = Math.min(svgHeight, initialSvgHeight);
-
-    middleSvg.style.height = `${svgHeight}px`;
-}
-
-function distortSvg18() {
-    const middleSvg = document.getElementById('noteA18');
-    const viewportHeight = window.innerHeight;
-    const svgOffsetTop = middleSvg.getBoundingClientRect().top;
-
-    const initialSvgHeight = 240;
-    const minSvgHeight = 96;
-
-    let svgHeight = minSvgHeight + (svgOffsetTop / viewportHeight) * (initialSvgHeight - minSvgHeight);
-    svgHeight = Math.min(svgHeight, initialSvgHeight);
-
-    middleSvg.style.height = `${svgHeight}px`;
-}
-
-function distortSvg19() {
-    const middleSvg = document.getElementById('noteA19');
-    const viewportHeight = window.innerHeight;
-    const svgOffsetTop = middleSvg.getBoundingClientRect().top;
-
-    const initialSvgHeight = 500;
-    const minSvgHeight = 96;
-
-    let svgHeight = minSvgHeight + (svgOffsetTop / viewportHeight) * (initialSvgHeight - minSvgHeight);
-    svgHeight = Math.min(svgHeight, initialSvgHeight);
-
-    middleSvg.style.height = `${svgHeight}px`;
-}
-
-function distortSvg20() {
-    const middleSvg = document.getElementById('noteA20');
-    const viewportHeight = window.innerHeight;
-    const svgOffsetTop = middleSvg.getBoundingClientRect().top;
-
-    const initialSvgHeight = 500;
-    const minSvgHeight = 96;
-
-    let svgHeight = minSvgHeight + (svgOffsetTop / viewportHeight) * (initialSvgHeight - minSvgHeight);
-    svgHeight = Math.min(svgHeight, initialSvgHeight);
-
-    middleSvg.style.height = `${svgHeight}px`;
-}
-
-function distortSvg21() {
-    const middleSvg = document.getElementById('noteA21');
-    const viewportHeight = window.innerHeight;
-    const svgOffsetTop = middleSvg.getBoundingClientRect().top;
-
-    const initialSvgHeight = 500;
-    const minSvgHeight = 96;
-
-    let svgHeight = minSvgHeight + (svgOffsetTop / viewportHeight) * (initialSvgHeight - minSvgHeight);
-    svgHeight = Math.min(svgHeight, initialSvgHeight);
-
-    middleSvg.style.height = `${svgHeight}px`;
-}
-
-// THIS ONE INCREASES HEIGHT
-function lengthenSvg22() {
-    const middleSvg = document.getElementById('noteA22');
-    const svgRect = middleSvg.getBoundingClientRect();
-    const svgTop = svgRect.top;
-    const svgBottom = svgRect.bottom;
-    const svgDistanceFromTop = svgTop > 0 ? svgTop : 0;
-    const distancePercentage = (svgDistanceFromTop / window.innerHeight) * 100;
-
-    let svgHeight = (100 - distancePercentage) / 100 * window.innerHeight;
-    svgHeight = Math.max(svgHeight, 128);
-
-    middleSvg.style.height = `${svgHeight}px`;
-}
-
-// ADDITIONAL TRANSFORMATIONS
-
-function transformSvg6() {
+function SVGdistortion6() {
     const svg = document.getElementById('noteA6');
     const viewportHeight = window.innerHeight;
+    const topViewportHeight = 0.75 * viewportHeight; // 75% of viewport height
     const svgRect = svg.getBoundingClientRect();
     const svgTopOffset = svgRect.top;
-    const transformPercentage = Math.max(0, 100 - ((svgTopOffset / viewportHeight) * 100));
-    const transformValue = (transformPercentage / 100) * -12;
 
-    const opacity = 1.25 - (transformPercentage / 100);
-    const color = `rgb(${255 * (1 - opacity)}, ${255 * (1 - opacity)}, ${255 * (1 - opacity)})`;
+    // Calculate the percentage based on the top 75% of the viewport
+    const transformPercentage = Math.max(0, 100 - ((svgTopOffset / topViewportHeight) * 100));
+    const scaleValue = 0 + (transformPercentage / 100) * 300;
 
-    svg.style.transform = `skewY(${transformValue}deg)`;
-    svg.style.opacity = opacity;
-    svg.style.fill = color;
-}
-
-function transformSvg10() {
-    const svg = document.getElementById('noteA10');
-    const viewportHeight = window.innerHeight;
-    const svgRect = svg.getBoundingClientRect();
-    const svgTopOffset = svgRect.top;
-    const transformPercentage = Math.max(0, 100 - ((svgTopOffset / viewportHeight) * 100));
-    const transformValue = (transformPercentage / 100) * 0;
-
-    const opacity = 1.25 - (transformPercentage / 100);
-    const color = `rgb(${255 * (1 - opacity)}, ${255 * (1 - opacity)}, ${255 * (1 - opacity)})`;
-
-    svg.style.transform = `skewY(${transformValue}deg)`;
-    svg.style.opacity = opacity;
-    svg.style.fill = color;
-}
-
-function transformSvg11() {
-    const svg = document.getElementById('noteA11');
-    const viewportHeight = window.innerHeight;
-    const svgRect = svg.getBoundingClientRect();
-    const svgTopOffset = svgRect.top;
-    const transformPercentage = Math.max(0, 100 - ((svgTopOffset / viewportHeight) * 100));
-    const transformValue = (transformPercentage / 100) * 0;
-
-    const opacity = 1.25 - (transformPercentage / 100);
-    const color = `rgb(${255 * (1 - opacity)}, ${255 * (1 - opacity)}, ${255 * (1 - opacity)})`;
-
-    svg.style.transform = `skewY(${transformValue}deg)`;
-    svg.style.opacity = opacity;
-    svg.style.stroke = color;
-}
-
-function transformSvg15() {
-    const svg = document.getElementById('noteA15');
-    const viewportHeight = window.innerHeight;
-    const svgRect = svg.getBoundingClientRect();
-    const svgTopOffset = svgRect.top;
-    const transformPercentage = Math.max(0, 100 - ((svgTopOffset / viewportHeight) * 100));
-    const transformValue = (transformPercentage / 100) * 0;
-
-    const opacity = 1.25 - (transformPercentage / 100);
-    const color = `rgb(${255 * (1 - opacity)}, ${255 * (1 - opacity)}, ${255 * (1 - opacity)})`;
-
-    svg.style.transform = `skewY(${transformValue}deg)`;
-    svg.style.opacity = opacity;
-    svg.style.stroke = color;
-}
-
-function transformSvg22() {
-    const svg = document.getElementById('noteA22');
-    const viewportHeight = window.innerHeight;
-    const svgRect = svg.getBoundingClientRect();
-    const svgTopOffset = svgRect.top;
-    const transformPercentage = Math.max(0, 100 - ((svgTopOffset / viewportHeight) * 100));
-    const transformValue = (transformPercentage / 100) * 0;
-
-    const opacity = 1.25 - (transformPercentage / 100);
-    const color = `rgb(${255 * (1 - opacity)}, ${255 * (1 - opacity)}, ${255 * (1 - opacity)})`;
-
-    svg.style.transform = `skewY(${transformValue}deg)`;
-    svg.style.opacity = opacity;
-    svg.style.stroke = color;
-}
-
-// DEBOUNCE
-
-function debounce(func, wait) {
-    let timeout;
-    return function executedFunction() {
-        const context = this;
-        const args = arguments;
-        const later = function () {
-            timeout = null;
-            func.apply(context, args);
-        };
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-    };
+    const filterElement = document.getElementById('distortion6'); // Get the feDisplacementMap element
+    filterElement.setAttribute('scale', scaleValue); // Set the new scale value
 }
 </script>

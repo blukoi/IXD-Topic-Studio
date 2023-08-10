@@ -143,10 +143,6 @@ body {
     transition: height 1s ease;
 }
 
-/* svg {
-    scale: 1;
-} */
-
 #noteA1, #noteA3, #noteA4, #noteA7, #noteA8, #noteA10, #noteA12, #noteA13, #noteA14, #noteA17, #noteA18, #noteA19, #noteA20, #noteA21 {
     height: 96;
 }
