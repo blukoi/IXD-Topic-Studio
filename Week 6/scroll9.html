@@ -649,16 +649,15 @@ function handleScroll() {
 function SVGdistortion1() {
     const svg = document.getElementById('noteA1');
     const viewportHeight = window.innerHeight;
-    const topViewportHeight = 0.75 * viewportHeight; // 75% of viewport height
+    const topViewportHeight = 0.75 * viewportHeight;
     const svgRect = svg.getBoundingClientRect();
     const svgTopOffset = svgRect.top;
 
-    // Calculate the percentage based on the top 75% of the viewport
     const transformPercentage = Math.max(0, 100 - ((svgTopOffset / topViewportHeight) * 100));
     const scaleValue = 0 + (transformPercentage / 100) * 300;
 
-    const filterElement = document.getElementById('distortion1'); // Get the feDisplacementMap element
-    filterElement.setAttribute('scale', scaleValue); // Set the new scale value
+    const filterElement = document.getElementById('distortion1');
+    filterElement.setAttribute('scale', scaleValue);
 }
 
 function SVGdistortion2() {
